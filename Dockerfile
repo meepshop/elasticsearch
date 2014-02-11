@@ -24,4 +24,4 @@ EXPOSE 9300
 
 # Define an entry point.
 ENTRYPOINT ["/usr/share/elasticsearch/bin/elasticsearch"]
-CMD ["-f"]
+CMD ["-f","-Des.config","/path/to/config/file"]
